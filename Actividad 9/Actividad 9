@@ -1,0 +1,104 @@
+#include <iostream>
+using namespace std;
+ 
+struct nodo{
+    int nro;
+    struct nodo *sgte;
+};
+ 
+typedef nodo *ptrPila; 
+void push( ptrPila &p, int valor )
+{
+     ptrPila aux;
+     aux = new(struct nodo);  
+     aux->nro = valor;
+     
+     aux->sgte = p ;
+     p = aux ;
+}
+ 
+int pop( ptrPila &p )
+{
+     int num ;
+     ptrPila aux;
+     
+     aux = p ;
+     num = aux->nro;  
+     
+     p = aux->sgte ;
+     delete(aux);
+     
+     return num;
+}
+ 
+void mostrar_pila( ptrPila p )
+{
+     ptrPila aux;
+     aux = p;    
+     
+     while( aux !=NULL )
+     {
+            cout<<"\t"<< aux->nro <<endl;
+            aux = aux->sgte;
+     }    
+}
+ 
+ 
+void menu()
+{
+    cout<<" 1. APILAR                                "<<endl;
+    cout<<" 2. DESAPILAR                             "<<endl;
+    cout<<" 3. MOSTRAR PILA                          "<<endl;
+    cout<<" 4. SALIR                                 "<<endl;
+ 
+    cout<<"\n INGRESE UNA OPCION: ";
+}
+ 
+int main()
+{
+    ptrPila p = NULL;  
+    int dato;
+    int op;
+    int x ; 
+ 
+    do
+    {
+        menu();  cin>> op;
+    
+        switch (op)
+        {
+            case 1:
+ 
+                 cout<< "\n NUMERO A APILAR: "; 
+                 cin>> dato;
+                 push( p, dato );
+                 cout<<"Numero " << dato << " apilado";
+            break;
+ 
+ 
+            case 2:
+ 
+                 x = pop( p );
+                 cout<<"Numero "<< x <<" desapilado.";
+            break;
+                 
+ 
+            case 3:
+ 
+                 cout << "MOSTRANDO PILA";
+                 if(p!=NULL)
+                    mostrar_pila( p );
+                 else
+                    cout<<"Pila vacia..!"<<endl;
+            break;
+        }
+        cout<<endl<<endl;
+        system("pause");  system("cls");
+    }
+      
+        while(op!=4);  
+        
+        return 0;
+ 
+}
+
