@@ -1,0 +1,15 @@
+CONVERSION DE MANERA INTUITIVA DE NOTACION INFJA A POSTFIJA
+
+
+A-B/(C*D$E) Ejercisio 1
+A-B/(C*DE$) signo de la potencia $
+A-B/(CDE$*) signo de multiplicaion *
+A-BCDE$*  sin parentesis
+A-BCDE$*/ signo de division
+AB-CDE$*/ signo de la resta
+
+((A+B)*C-(D-E))$(F+G) Ejercisio 2
+((A+B)C*-(D-E))$(F+G)signo de multiplicacion
+AB+C*DE--$FG+ signo de suma y resta
+AB+C*DE--FG+$ signo de potencia
+
