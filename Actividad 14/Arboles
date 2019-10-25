@@ -1,0 +1,96 @@
+Daniela Raquel Batres Arce         00136018
+Tania Michelle Delgado Vásquez 00190918
+
+	Cuales nodos son la raíz, ramas y hojas
+Raíz 
+1. A
+Ramas
+2. B, C, D , E
+Hojas
+3. G, H, I , F
+	Nivel de cada nodo
+Nivel cero 
+A
+Nivel uno
+B, C
+Nivel dos 
+D, E, F
+Nivel Tres 
+G, H, I
+	Profundidad, peso y orden de un árbol 
+La profundidad tiene tres
+Peso total 9
+Árbol con orden 2
+	Un sub árbol cualquiera 
+
+ 
+
+Sub árbol 1.              Sub árbol 2.
+
+	Determine si es lleno o estricto 
+
+ 
+No es  lleno ya que el nodo F es una hoja porque no posee ningún hijo 
+
+	Determine si es perfecto o completo
+
+ 
+
+No es perfecto y completo ya que todas sus hojas no están en un mismo nivel
+	Recorrido pre orden, post orden e in orden
+Pre orden 
+
+ A,B,D,G,C,E,H,I,F
+
+Post orden
+
+ G,D,B,H,E,I,C,F,A
+
+In orden
+D,G,B,H,E,I,C,F,A
+ 
+
+ARBOL 2
+
+ 
+
+	Cuales nodos son la raíz, ramas y hojas
+NODO Raíz: A
+NODOS Ramas: B, C, D, E, F,H.
+NODOS HOJAS: I,J,K,L,G.
+	NIVEL DE CADA NODO 
+NODO A :nivel 0
+NODO B: nivel 1
+NODOS C Y D: Nivel 2
+NODOS E,F,G,H: Nivel 3
+NODOS I,J,K,L: Nivel 4
+	PROFUNDIDAD, PESO Y ORDEN DEL ARBOL.
+Profundidad: 4
+Peso: 12
+Orden del árbol: 2
+	UN SUB-ARBOL CUALQUIERA
+Sub-árbol  A_1 =      
+	DETERMINAR SI ES LLENO O ESTRICTO
+El árbol no es lleno o estricto  porque  los nodos E,F y D no cumplen con la condición de solo tener cero o dos hijos.
+  
+	DETERMINAR SI ES PERFECTO O COMPLETO 
+ 
+Si es perfecto o completo debido a que sus hojas están en el mismo nivel
+
+
+
+
+
+	RECORRIDOS PRE-ORDEN, POST-ORDEN E IN-ORDEN.
+PRE-ORDEN
+RAIZ-IZQUIERDA-DERECHA
+ 
+A,B,C,E,I,F,J,D,G,H,K,L.
+POST-ORDEN
+SUB ARBOLES Y LUEGO RAIZ
+ 
+I,E,J,F,C,G,K,L,H,D,B,A
+IN-ORDEN
+ 
+E,I,C,F,J,B,G,D,K,H,L,A
+
